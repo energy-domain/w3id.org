@@ -1,2 +1,17 @@
 RewriteEngine On
+
+# Core EDO
+# https://w3id.org/energy-domain/edo
 RewriteRule ^edo$ https://raw.githubusercontent.com/energy-domain/edo/main/core/energy-domain-ontology.ttl [R=302,L]
+
+# Governance - Maintenance
+# https://w3id.org/energy-domain/governance/maintenance
+RewriteRule ^governance/maintenance$ https://raw.githubusercontent.com/energy-domain/edo/main/governance/maintenance/edo-gov-maintenance.ttl [R=302,L]
+
+# Governance - Review
+# https://w3id.org/energy-domain/governance/review
+RewriteRule ^governance/review$ https://raw.githubusercontent.com/energy-domain/edo/main/governance/review/edo-gov-review.ttl [R=302,L]
+
+# Governance - Extraction
+# https://w3id.org/energy-domain/governance/extraction 
+RewriteRule ^governance/extraction$ https://github.com/energy-domain/edo/tree/edo_develop/governance/extraction/edo-gov-extraction.ttl [R=302,L]]
